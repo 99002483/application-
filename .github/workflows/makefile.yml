@@ -1,0 +1,8 @@
+bankmake: bank.o
+	g++ bank.o -o bankmake
+    
+main.o: bank.h
+     g++ -c bank.c
+     
+clean:
+     rm *.o output
